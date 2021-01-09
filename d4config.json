@@ -21,4 +21,4 @@
     "javax/naming/.*",
     "javax/sound/.*"],
     "jar": "/weblech.jar" 
-}
+} 
