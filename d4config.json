@@ -20,5 +20,5 @@
     "javax/print/.*",
     "javax/naming/.*",
     "javax/sound/.*"],
-    "jar": "weblech.jar"
+    "jar": "/weblech.jar"
 }
