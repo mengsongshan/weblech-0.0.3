@@ -1,0 +1,3 @@
+Main-Class: weblech.ui.TextSpider
+Class-Path: lib/log4j-1.1.3.jar
+Manifest-Version: 1.0
