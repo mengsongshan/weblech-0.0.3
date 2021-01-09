@@ -7,3 +7,8 @@ standard web-browser behaviour as much as possible. WebLech is
 multithreaded and comes with a GUI console.
 
 More information from http://weblech.sourceforge.net/
+
+
+==================================
+Updated: 
+1. Change build.sh to build jar according to Manifest.txt
