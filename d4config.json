@@ -13,5 +13,5 @@
   "java/text/.*",
   "java/util/.*",
   "org/apache/log4j/.*"],
-  "jar": "/weblech.jar" 
+  "jar": "/weblech.jar"  
 } 
