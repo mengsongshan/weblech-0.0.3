@@ -10,7 +10,7 @@ build:
 
 d4tasks: 
 
-  - name: Do_main
+  - name: Do_Main
     which_main_class: weblech/ui/TextSpider
     jar: /weblech.jar 
     exclusions: 
