@@ -1,8 +1,6 @@
 #!/bin/sh
 
 echo "Building WebLech..."
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
-export PATH="$JAVA_HOME/bin:$PATH"
 
 echo "Building Spider..."
 javac -classpath lib/log4j-1.1.3.jar -d classes src/weblech/spider/*.java src/weblech/ui/*.java src/weblech/util/*.java
