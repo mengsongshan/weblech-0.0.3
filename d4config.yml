@@ -28,4 +28,4 @@ d4tasks:
       java/util/.*,
       org/apache/log4j/.*
     
-     
+      
