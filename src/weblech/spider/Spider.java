@@ -93,7 +93,7 @@ public class Spider extends Logger implements Runnable, Constants
         }
     }
 
-    public synchronized void stop()
+    public void stop()
     {
         quit = true;
     }
