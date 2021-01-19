@@ -8,7 +8,7 @@ build:
         run: |
           ./build.sh
 
-d4tasks: 
+d4tasks:  
 
   - name: Do_Main
     which_main_class: weblech/ui/TextSpider
