@@ -17,7 +17,7 @@ d4tasks:
     exclusions: 
       java/applet/.*,
       java/awt/.*,
-      java/beans/.*,
+      java/beans/.*, 
       java/io/.*,
       java/math/.*,
       java/net/.*,
