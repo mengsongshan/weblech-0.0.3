@@ -224,9 +224,7 @@ public class Spider extends Logger implements Runnable, Constants
             }
         }
         _logClass.info("Spider thread stopping");
-        synchronized(queue){
         running--;
-        }
     }
 
     /**
@@ -234,7 +232,7 @@ public class Spider extends Logger implements Runnable, Constants
      */
     private int queueSize()
     {
-        synchronized(queue)
+        // synchronized(queue)
         {
             return queue.size();
         }
