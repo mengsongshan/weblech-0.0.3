@@ -232,7 +232,7 @@ public class Spider extends Logger implements Runnable, Constants
      */
     private int queueSize()
     {
-        // synchronized(queue)
+        synchronized(queue)
         {
             return queue.size();
         }
