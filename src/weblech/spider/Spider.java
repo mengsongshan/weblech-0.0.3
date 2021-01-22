@@ -109,7 +109,8 @@ public class Spider extends Logger implements Runnable, Constants
         {
             return;
         }
-
+synchronized(queue)
+            {
         if(System.currentTimeMillis() - lastCheckpoint > config.getCheckpointInterval())
         {
             synchronized(queue)
