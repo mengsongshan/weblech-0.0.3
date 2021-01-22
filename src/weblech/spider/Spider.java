@@ -224,7 +224,9 @@ public class Spider extends Logger implements Runnable, Constants
             }
         }
         _logClass.info("Spider thread stopping");
+        synchronized(queue){
         running--;
+        }
     }
 
     /**
