@@ -113,8 +113,6 @@ synchronized(queue)
             {
         if(System.currentTimeMillis() - lastCheckpoint > config.getCheckpointInterval())
         {
-            synchronized(queue)
-            {
                 if(System.currentTimeMillis() - lastCheckpoint > config.getCheckpointInterval())
                 {
                     writeCheckpoint();
