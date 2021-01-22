@@ -109,11 +109,11 @@ public class Spider extends Logger implements Runnable, Constants
         {
             return;
         }
-synchronized(queue)
-            {
+
         if(System.currentTimeMillis() - lastCheckpoint > config.getCheckpointInterval())
         {
-            
+            synchronized(queue)
+            {
                 if(System.currentTimeMillis() - lastCheckpoint > config.getCheckpointInterval())
                 {
                     writeCheckpoint();
@@ -224,9 +224,7 @@ synchronized(queue)
             }
         }
         _logClass.info("Spider thread stopping");
-        synchronized(queue) {
         running--;
-        }
     }
 
     /**
