@@ -21,7 +21,7 @@ d4tasks:
       java/io/.*,
       java/math/.*,
       java/net/.*,
-      java/nio/.*,
+      java/nio/.*, 
       java/rmi/.*,
       java/security/.*,
       java/sql/.*,
