@@ -1,0 +1,32 @@
+name: weblech-0.0.3
+branches: [ master ]
+build:
+    runs_on: java1.8
+    steps:
+
+      - name: Run  
+        run: |
+          ./build.sh
+
+d4tasks: 
+
+  - name: Do_Main
+    which_main_class: weblech/ui/TextSpider
+    jar: /weblech.jar 
+    classes: /classes
+    exclusions: 
+      java/applet/.*,
+      java/awt/.*,
+      java/beans/.*,
+      java/io/.*,
+      java/math/.*,
+      java/net/.*,
+      java/nio/.*,
+      java/rmi/.*,
+      java/security/.*,
+      java/sql/.*, 
+      java/text/.*,
+      java/util/.*,
+      org/apache/log4j/.*
+    
+      
