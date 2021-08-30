@@ -130,11 +130,19 @@ public class URLObject
     private String convertToFileName()
     {
         String url = sourceURL.toExternalForm();
+        
         int httpIdx = url.indexOf("http://");
         if(httpIdx == 0)
         {
             url = url.substring(7);
+        } else {
+            // support https 
+            httpIdx = url.indexOf("https://");
+            if (httpIdx == 0) {
+                url = url.substring(8);
+            }
         }
+        
         // Check for at least one slash -- otherwise host name (e.g. sourceforge.net)
         if(url.indexOf("/") < 0)
         {
